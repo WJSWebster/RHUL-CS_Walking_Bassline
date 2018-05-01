@@ -1,0 +1,72 @@
+#N canvas 198 135 450 300 10;
+#X obj 103 27 tgl 15 0 empty chord1 Chord_1 17 7 0 10 -262144 -1 -1
+0 1;
+#X floatatom 65 25 5 0 0 0 - RandomValue -, f 5;
+#X obj 84 50 *;
+#X obj 29 157 bng 15 250 50 0 F1_note empty F1 17 7 0 10 -262144 -1
+-1;
+#X obj 147 159 bng 15 250 50 0 F2_note empty F2 17 7 0 10 -262144 -1
+-1;
+#X obj 66 158 bng 15 250 50 0 A1_note empty A1 17 7 0 10 -262144 -1
+-1;
+#X obj 183 158 bng 15 250 50 0 A2_note empty A2 17 7 0 10 -262144 -1
+-1;
+#X obj 106 158 bng 15 250 50 0 C\$2_note empty C\$2 17 7 0 10 -262144
+-1 -1;
+#X floatatom 257 19 5 0 0 0 - RandomValue -, f 5;
+#X obj 271 152 bng 15 250 50 0 B2_note empty B2 17 7 0 10 -262144 -1
+-1;
+#X obj 305 153 bng 15 250 50 0 D2_note empty D2 17 7 0 10 -262144 -1
+-1;
+#X obj 343 152 bng 15 250 50 0 F2_note empty F2 17 7 0 10 -262144 -1
+-1;
+#X obj 375 148 bng 15 250 50 0 B3_note empty B3 17 7 0 10 -262144 -1
+-1;
+#X obj 238 152 bng 15 250 50 0 F1_note empty F1 17 7 0 10 -262144 -1
+-1;
+#X obj 67 230 tgl 15 0 empty chord3 Chord_3 17 7 0 10 -262144 -1 -1
+0 1;
+#X floatatom 26 229 5 0 0 0 - RandomValue -, f 5;
+#X obj 50 255 *;
+#X obj 62 327 bng 15 250 50 0 G1_note empty G1 17 7 0 10 -262144 -1
+-1;
+#X obj 96 328 bng 15 250 50 0 A\$1_note empty A\$1 17 7 0 10 -262144
+-1 -1;
+#X obj 134 327 bng 15 250 50 0 E2_note empty E2 17 7 0 10 -262144 -1
+-1;
+#X obj 166 329 bng 15 250 50 0 G2_note empty G2 17 7 0 10 -262144 -1
+-1;
+#X obj 29 327 bng 15 250 50 0 E_note empty E1 17 7 0 10 -262144 -1
+-1;
+#X obj 63 126 select 0 1 2 3 4 5;
+#X obj 258 119 select 0 1 2 3 4 5;
+#X obj 47 284 select 0 1 2 3 4 5;
+#X obj 288 50 *;
+#X obj 324 21 tgl 15 0 empty chord2 Chord_2 17 7 0 10 -262144 -1 -1
+0 1;
+#X floatatom 68 103 5 0 0 0 - - -, f 5;
+#X connect 0 0 2 1;
+#X connect 1 0 2 0;
+#X connect 2 0 27 0;
+#X connect 8 0 25 0;
+#X connect 14 0 16 1;
+#X connect 15 0 16 0;
+#X connect 16 0 24 0;
+#X connect 22 1 3 0;
+#X connect 22 2 5 0;
+#X connect 22 3 7 0;
+#X connect 22 4 4 0;
+#X connect 22 5 6 0;
+#X connect 23 1 13 0;
+#X connect 23 2 9 0;
+#X connect 23 3 10 0;
+#X connect 23 4 11 0;
+#X connect 23 5 12 0;
+#X connect 24 1 21 0;
+#X connect 24 2 17 0;
+#X connect 24 3 18 0;
+#X connect 24 4 19 0;
+#X connect 24 5 20 0;
+#X connect 25 0 23 0;
+#X connect 26 0 25 1;
+#X connect 27 0 22 0;

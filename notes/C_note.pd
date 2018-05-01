@@ -1,0 +1,34 @@
+#N canvas 294 42 450 300 10;
+#X obj 269 22 bng 15 250 50 0 C2 C2_note bang_from_phase_overview 17
+7 0 10 -262144 -1 -1;
+#X obj 180 161 line~;
+#X msg 157 78 1 10;
+#X obj 237 73 del 10;
+#X obj 68 90 phasor~;
+#X obj 27 89 osc~;
+#X obj 51 127 +~;
+#X obj 97 207 *~;
+#X obj 149 207 tgl 15 0 empty C2_note empty 17 7 0 10 -262144 -1 -1
+0 1;
+#X obj 87 268 dac~;
+#X obj 93 237 *~;
+#X msg 235 121 0 2990;
+#X obj 149 241 bng 15 250 50 0 C2 empty C2-BassUI 17 7 0 10 -262144
+-1 -1;
+#X obj 51 44 65.41;
+#X connect 0 0 2 0;
+#X connect 0 0 3 0;
+#X connect 1 0 7 1;
+#X connect 2 0 1 0;
+#X connect 3 0 11 0;
+#X connect 4 0 6 1;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 7 0 10 0;
+#X connect 8 0 10 1;
+#X connect 8 0 12 0;
+#X connect 10 0 9 0;
+#X connect 10 0 9 1;
+#X connect 11 0 1 0;
+#X connect 13 0 4 0;
+#X connect 13 0 5 0;
